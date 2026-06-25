@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating an Online Job Application Form Using HTML</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" placeholder="Enter your full Name"> <br><br>
+                <label for="nidnum">National ID Number</label>
+                <input id="nidnum" type="number" placeholder="Enter your national id number"> <br><br>
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="Enter your email"> <br><br>
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" placeholder="Enter your phone number"> <br><br>
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date"> <br><br>
+                <label>Gender</label>
+                <input id="male" name="gender" type="radio" value="male">
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+            <fieldset>
+                <legend>Job Information</legend>
+                <label for="pos">Position Applied For</label>
+                <select name="pos" id="pos">
+                    <option value="sd" selected >Software Developer</option>
+                    <option value="wd" >Web Designer</option>
+                    <option value="ne">Network Engineer</option>
+                    <option value="da">Database Administrator</option>
+                    <option value="itsupoff">IT Support Officer</option>
+                </select>
+                <br><br>
+                <label for="exp">Experience Level</label>
+                <select name="exp" id="exp">
+                    <option value="fresher">Fresher</option>
+                    <option value="1-2">1-2 Years</option>
+                    <option value="3-4">3-4 Years</option>
+                    <option value="5-mor">More Than 5 Years</option>
+                </select>
+                <br><br>
+                <label>Skills</label> <br>
+                <input type="checkbox" name="html" id="html">
+                <label for="html">HTML</label> <br>
+                <input type="checkbox" name="css" id="css">
+                <label for="css">CSS</label> <br>
+                <input type="checkbox" name="js" id="js">
+                <label for="js">Java Script</label> <br>
+                <input type="checkbox" name="py" id="py">
+                <label for="py">Python</label> <br>
+                <input type="checkbox" name="sql" id="sql">
+                <label for="sql">SQL</label> <br>
+            </fieldset>
+            <fieldset>
+                <legend>Educational Information</legend>
+                <label for="qua">Highest Qualification</label>
+                <select name="qua" id="qua">
+                    <option value="ssc">SSC</option>
+                    <option value="hsc">HSC</option>
+                    <option value="bsc">BSc</option>
+                    <option value="msc">MSc</option>
+                    <option value="phd">PHD</option>
+                </select>
+                <br><br>
+                <label for="insti_name">University/College Name</label>
+                <input type="text" id="insti_name">
+                <br><br>
+                <label for="gyear">Graduation Year</label>
+                <input type="date">
+            </fieldset>
+            <fieldset>
+                <legend>Additional Informaltion</legend>
+                <label for="resume">Upload Resume/CV</label>
+                <input type="file">
+                <br><br>
+                <label for="cover">Cover Letter</label>
+                <textarea name="cover" id="cover" maxlength="300"></textarea>
+                <br><br>
+                <label for="add">Current Address</label>
+                <textarea name="add" id="add"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+</body>
+
+</html>
